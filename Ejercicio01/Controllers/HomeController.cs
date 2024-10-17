@@ -17,7 +17,7 @@ namespace Ejercicio01.Controllers
         {   
             DateTime date = DateTime.Now;
             ViewData["Saludo"] = date.Hour > 6 && date.Hour < 12 ? "Buenos días" : date.Hour > 12 && date.Hour < 20 ? "Buenas tardes" : "Buenas noches";
-            ViewBag.Saludo = date.ToLongDateString();
+            ViewBag.Fecha = date.ToLongDateString();
 
             clsPersona persona = new clsPersona();
             persona.nombre = "Amaro";
