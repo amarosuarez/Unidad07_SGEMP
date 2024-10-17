@@ -1,0 +1,21 @@
+﻿@model Ejercicio01.Models.clsPersona
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1>@ViewData["Saludo"] @Model.nombre</h1>
+    <h2>@ViewBag.Saludo</h2>
+    <p>
+        @Model.nombre
+        <br />
+        @Model.apellidos
+        <br />
+        @Model.telefono
+        <br />
+        @Model.direccion
+        <br />
+        @Model.fechaNac
+    </p>
+</div>
