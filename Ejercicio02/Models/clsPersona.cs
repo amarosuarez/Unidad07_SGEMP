@@ -1,7 +1,6 @@
-﻿namespace Ejercicio01.Models
+﻿namespace Ejercicio02.Models
 {
     public class clsPersona
-
     {
         public int idPersona { get; set; }
 

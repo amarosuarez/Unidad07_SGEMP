@@ -1,0 +1,21 @@
+﻿@model List<Ejercicio01.Models.clsPersona>
+
+<table>
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Apellidos</th>
+            <th>Edad</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var persona in Model)
+        {
+            <tr>
+                <td>@persona.nombre</td>
+                <td>@persona.apellidos</td>
+                <td>@persona.edad</td>
+            </tr>
+        }
+    </tbody>
+</table>

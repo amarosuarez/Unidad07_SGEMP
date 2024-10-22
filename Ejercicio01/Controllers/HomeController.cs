@@ -1,4 +1,5 @@
 using Ejercicio01.Models;
+using Ejercicio01.Models.DAL;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -27,6 +28,13 @@ namespace Ejercicio01.Controllers
             persona.direccion = "Mi casa";
 
             return View(persona);
+        }
+
+        public IActionResult ListadoPersonas()
+        {
+            clsListado listado = new clsListado();
+            List<clsPersona> personas = listado.obtenerListadoPersonas();
+            return View(personas);
         }
 
         public IActionResult Privacy()
