@@ -8,6 +8,6 @@
 
         public int Edad { get; set; }
 
-        public int idDepartamento { get; set; }
+        public int IdDepartamento { get; set; }
     }
 }
