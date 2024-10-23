@@ -2,12 +2,9 @@
 {
     public class ClsPersona
     {
-        public string Nombre { get; set; }
-        
-        public string Apellidos { get; set; }
-
-        public int Edad { get; set; }
-
-        public int IdDepartamento { get; set; }
+        public string nombre { get; set; }
+        public string apellidos { get; set; }
+        public int idDepartamento { get; set; }
     }
+
 }

@@ -5,12 +5,13 @@ namespace Ejercicio04.Models.VM
 {
     public class ClsEditarPersonaVM : ClsPersona
     {
-        public List<ClsDepartamento> departamentos { get; }
+        public List<ClsDepartamento> Departamentos { get; set; }
 
+        // Constructor
         public ClsEditarPersonaVM()
         {
-            departamentos = ClsListado.ObtenerDepartamento();
+            // Llenar el listado de departamentos al iniciar el ViewModel
+            Departamentos = ClsListado.ObtenerDepartamentos(); // Llama al método estático para obtener departamentos
         }
-
     }
 }
